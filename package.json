@@ -1,0 +1,24 @@
+{
+  "name": "logseq-datasource-plugin",
+  "version": "0.0.1",
+  "description": "Logseq datasource plugin",
+  "author": "shady2k",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./index.html",
+    "build": "parcel build --public-url . --no-source-maps index.html"
+  },
+  "devDependencies": {
+    "@logseq/libs": "^0.0.1-alpha.31",
+    "parcel": "^2.0.0"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.4.1"
+  },
+  "logseq": {
+    "main": "dist/index.html",
+    "title": "Datasource",
+    "icon": "./icon.png",
+    "id": "_24yfv1qct"
+  }
+}
