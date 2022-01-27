@@ -1,6 +1,6 @@
 {
   "name": "logseq-datasource-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Logseq datasource plugin",
   "author": "shady2k",
   "license": "MIT",
