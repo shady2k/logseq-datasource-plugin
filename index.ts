@@ -47,6 +47,14 @@ async function main() {
         })
     });
   });
+
+  socket.on("disconnect", (reason) => {
+    if (reason === "io server disconnect") {
+      // the disconnection was initiated by the server, you need to reconnect manually
+      socket.connect();
+    }
+    // else the socket will automatically try to reconnect
+  });
 }
 
 async function queryLogseq(query: string) {
